@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Elemen Paragraf</title>
+	</head>
+	<body>
+		<!-- Contoh Paragraf -->
+		<p align="left">Perhatikan, paragraf ini rata kiri.</p>
+		<p align="center">Perhatikan, paragraf ini di tengah.</p>
+		<p align="right">Perhatikan, paragraf ini rata kanan.</p>
+		<p align="justify">Perhatikan, paragraf ini rata kiri kanan.</p>
+
+		<!-- Contoh Blockquote -->
+		<h3>Profil</h3>
+		<blockquote>SMK Negeri 7 Samarinda<br/>
+			Sekolah IT yang berada di Kota Samarinda, Provinsi Kalimantan Timur yang memiliki 4 jurusan yaitu PPLG, DKV, TJKT, dan Animasi.
+		</blockquote>
+
+		<!-- Contoh Font -->
+		<font size="1">Ukuran Font 1</font><br/>
+		<font face="arial">Arial --- ABCde123</font><br/>
+		<font color="red">Ini font berwarna merah.</font><br/>
+		<font color="#FF0000">Ini juga font berwarna merah.</font><br/>
+
+		<b>Tebal</b><br/>
+		<i>Miring</i><br/>
+		<u>Garis bawah</u><br/>
+		<s>Tercoret</s><br/>
+		<strike>Tercoret juga</strike><br/>
+		<blink>Berkedip</blink><br/>
+		<tt>Seperti mesin tik</tt><br/>
+		<big>Tulisan besar</big><br/>
+		<small>Tulisan kecil</small><br/>
+		Teks <sub>subscript</sub><br/>
+		Teks <sup>superscript</sup><br/>
+
+		<!-- Bullets and Numbering -->
+		<h4>An Ordered List</h4>
+		<ol>
+			<li>Coffee</li>
+			<li>Tea</li>
+			<li>Milk</li>
+		</ol>
+
+		<h4>A Definition List</h4>
+		<dl>
+			<dt>Coffee</dt>
+			<dd>Black hot drink</dd>
+			<dt>Milk</dt>
+			<dd>White cold drink</dd>
+		</dl>
+
+		<!-- Contoh Garis Horizontal -->
+		<hr/>
+		<hr width="50%"/>
+		<hr width="70%" color="red"/>
+		<hr width="70%" color="red" size="50px" />
+		<hr width="50%" color="yellow" size="50px"/>
+		<hr width="70%" color="blue" size="50px" align="right"/>
+
+		<div id="fontWarna"><h1 style="font-size: 50px;">Font ini berubah warna</h1></div>
+	</body>
+
+	<script type="text/javascript">
+        let red = 0;
+        let green = 0;
+        let blue = 0;
+        let num = 1;
+        let num2 = 0;
+        let num3 = 0;
+        setInterval(function () {
+            let red2 = red*0x10000;
+            let green2 = green*0x100;
+            let blue2 = blue*0x1;
+            let resultColor = red2 + green2 + blue2;
+            let color = resultColor.toString(16);
+            document.getElementById("fontWarna").style.color = "#" + color;
+            console.log("asdf: " + color);
+            red+=num;
+            green+=num2;
+            blue+=num3;
+            if (red <= 0 && green <= 0 && blue <= 0) {
+            	red = 0;
+            	num = 1;
+            }
+            if (red <= 0) {
+            	red = 0;
+            	//num = 0;
+            }
+            if (green <= 0) {
+            	green = 0;
+            	//num2 = 0;
+            }
+            if (blue <= 0) {
+            	blue = 0;
+            	//num3 = 0;
+            }
+            if (red >= 255) {
+            	red = 255;
+            	//num = 0;
+            }
+            if (green >= 255) {
+            	green = 255;
+            	//num2 = 0;
+            }
+            if (blue >= 255) {
+            	blue = 255;
+            	//num3 = 0;
+            }
+
+            if (red >= 255) {
+                num = 0;
+                num2 = 1;
+            }
+
+            if (green >= 255) {
+                num = -1;
+                num2 = 0;
+                num3 = 1;
+            }
+
+            if (blue >= 255) {
+                num = 1;
+                num2 = -1;
+                num3 = 0;
+            }
+
+            if (red >= 255 & blue >= 255) {
+                num = -1;
+                num2 = 0;
+                num3 = -1;
+            }
+        }, 6);
+    </script>
+
+	<script src="https://basis64computer.github.io/basis64-website/js/feedback.js" type="text/javascript"></script>
+    <script src="https://basis64computer.github.io/sederhana/js/visitor.js" type="text/javascript"></script>
+    <script src="https://basis64computer.github.io/sederhana/js/jquery.min.js" type="text/javascript"></script>
+</html>
