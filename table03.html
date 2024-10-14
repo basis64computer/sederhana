@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>Contoh Halaman Web</title>
+    </head>
+    <body>
+        <h1 style="color: red;">Contoh Tabel dengan Fitur Pencarian</h1>
+        <table id="datatablesSimple">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Nama</th>
+                    <th>ID</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Rusdi</td>
+                    <td>01001100</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Faiz</td>
+                    <td>01001001</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Joel</td>
+                    <td>01001110</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Ilham</td>
+                    <td>01010101</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Asdf</td>
+                    <td>01011000</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', event => {
+            // Simple-DataTables
+            // https://github.com/fiduswriter/Simple-DataTables/wiki
+
+            const datatablesSimple = document.getElementById('datatablesSimple');
+            if (datatablesSimple) {
+                new simpleDatatables.DataTable(datatablesSimple);
+            }
+        });
+    </script>
+
+    <script src="https://basis64computer.github.io/basis64-website/js/feedback.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
+    <script src="visitor.js" type="text/javascript"></script>
+    <script src="jquery.min.js" type="text/javascript"></script>
+</html>
+
