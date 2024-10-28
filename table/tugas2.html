@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>Tugas 2</title>
+        <style>
+            .centered-text {
+                display: flex;
+                justify-content: center;
+            }
+
+            /* Mengatur jarak di sekitar tanda titik dua */
+            .centered-text span {
+                margin-left: 5px;  /* Geser lebih dekat ke teks sebelumnya */
+                margin-right: 10px; /* Geser lebih jauh dari teks sesudahnya */
+            }
+
+            .info {
+                text-align: center;
+            }
+
+            /* Mengatur ukuran gambar */
+            img {
+                width: 150px;  /* Sesuaikan lebar gambar */
+                height: auto;  /* Memastikan proporsi gambar tetap */
+            }
+        </style>
+    </head>
+    <body>
+        <table width="90%" align="center" border="2">
+            <tr>
+                <td colspan="3" align="center"><h1>DAFTAR RIWAYAT HIDUP</h1></td>
+            </tr>
+            <tr>
+                <td colspan="3" align="center">
+                    <p><img src="https://drive.google.com/uc?export=download&id=1SEilqXViMEhB6asFBCt4UEiXkBgMwEts" /></p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" class="info">
+                    <!-- Kolom Nama dan NISN dalam satu kolom -->
+                     <table class="centered-text">
+                        <tbody>
+                            <tr>
+                                <td>Nama</td>
+                                <td>:</td>
+                                <td>Gabriel Ado Ramos Tukan</td>
+                            </tr>
+                            <tr>
+                                <td>Kelas</td>
+                                <td>:</td>
+                                <td>XI TJKT 1</td>
+                            </tr>
+                        </tbody>
+                     </table>
+                </td>
+            </tr>
+        </table>
+    </body>
+    <script type="text/javascript">
+        function startDownload() {
+          let imageURL =
+            "https://cdn.glitch.com/4c9ebeb9-8b9a-4adc-ad0a-238d9ae00bb5%2Fmdn_logo-only_color.svg?1535749917189";
+          let imageDescription = "The Mozilla logo";
+
+          downloadedImg = new Image();
+          downloadedImg.crossOrigin = "anonymous";
+          downloadedImg.addEventListener("load", imageReceived, false);
+          downloadedImg.alt = imageDescription;
+          downloadedImg.src = imageURL;
+        }
+
+    </script>
+</html>

