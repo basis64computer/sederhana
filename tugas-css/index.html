@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tugas CSS</title>
+	<style type="text/css">
+		/* Contoh background */
+		body {
+			background: url('background.jpg');
+			width: 100vw;
+			height: 100vh;
+			background-size: cover;
+		}
+
+		.center {
+			text-align: center;
+		}
+
+		#gambar {
+			width: 50%;
+			max-width: 100%;
+		}
+
+		/* Contoh selektor class */
+		.container {
+			margin: 25px auto 25px auto;
+		  width: 80%;
+		  max-width: 100%;
+		  border: 2px solid #333;
+		  padding: 20px;
+		  background-color: white;
+		}
+
+		/* Contoh nesting */
+		.container .judul {
+			color: #084494;
+			font-weight: bold;
+			font-size: 28px;
+		}
+
+		.container .teks {
+			color: black;
+			font-style: bold;
+			font-size: 16px;
+		}
+
+		/* Contoh selektor ID */
+		#button-view-source {
+			border: none;
+			outline-color: #084494;
+			background-color: #084494;
+			color: white;
+			padding: 15px 32px;
+			  text-align: center;
+			  text-decoration: none;
+			  display: inline-block;
+			  font-size: 16px;
+		}
+
+		/* Contoh pseudo class */
+		#button-view-source:hover {
+			background-color: #004AAD;
+		}
+
+		/* Contoh grouping */
+		h2, .teks1, .teks2 {
+			color: #084494;
+		}
+	</style>
+</head>
+<body>
+	<!-- Contoh div dengan selektor class -->
+	<div class="container">
+		<h1>Tugas CSS</h1>
+		<p>Nama: Gabriel Ado Ramos Tukan</p>
+		<p>Kelas: XI TJKT 1</p>
+		<p>Website ini adalah contoh untuk CSS tingkat lanjutan, Anda bisa melihat kode sumber website ini dengan cara mengklik tombol di bawah ini</p>
+		<!-- Contoh button dengan selektor ID -->
+		<button id="button-view-source" type="button" onclick="window.location.href = ('view-source:' + window.location.href)">Lihat kode sumber halaman ini</button>
+	</div>
+	<div class="container">
+		<!-- Contoh div dengan nesting -->
+		<p class="judul">Ternyata Gula Bermanfaat untuk Kesehatan</p>
+		<p class="teks">
+			Selama ini, ternyata gula membawa dampak positif yang sangat besar dan dapat meningkatkan kesehatan. Hal ini dibuktikan jika gula dapat meningkatkan mood dan menjadi sumber energi bagi tubuh, beberapa mahasiswa di universitas Harvard juga berhasil melakukan penelitian ini dan menemukan banyak manfaat dari gula, proyek ini juga didanai oleh Microsoft untuk mendukung perkembangan teknologi farmasi.
+			<br/>
+			<br/>
+			Dr. Ahmed Al Kaf dari Bahrain juga berkontribusi pada penelitian ini dan menyarankan untuk mengonsumsi gula sebanyak 300 gram/hari untuk orang dewasa dan 400 gram/hari untuk anak-anak, dia juga percaya bahwa ini membawa manfaat yang sangat besar. Dr. Ahmed Al Kaf juga berhasil meneliti bahwa setiap dalgona candy mengandung gula sebanyak 11 sampai 20 gram dan menyarankan untuk memakan dalgona candy sebanyak 10 sampai 20 buah per hari.
+			<br/>
+			<br/>
+			<img src="gambar01.jpg" id="gambar" />
+		</p>
+	</div>
+</body>
+</html>
