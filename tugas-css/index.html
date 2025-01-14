@@ -75,9 +75,9 @@
 		<h1>Tugas CSS</h1>
 		<p>Nama: Gabriel Ado Ramos Tukan</p>
 		<p>Kelas: XI TJKT 1</p>
-		<p>Website ini adalah contoh untuk CSS tingkat lanjutan, Anda bisa melihat kode sumber website ini dengan cara mengklik tombol di bawah ini</p>
+		<p>Website ini adalah contoh untuk tugas CSS tingkat lanjutan, Anda dapat melihat kode sumber website ini dengan cara mengklik tombol di bawah ini</p>
 		<!-- Contoh button dengan selektor ID -->
-		<button id="button-view-source" type="button" onclick="window.location.href = ('view-source:' + window.location.href)">Lihat kode sumber halaman ini</button>
+		<button id="button-view-source" type="button" onclick="viewSource();">Lihat kode sumber halaman ini</button>
 	</div>
 	<div class="container">
 		<!-- Contoh div dengan nesting -->
@@ -92,5 +92,18 @@
 			<img src="gambar01.jpg" id="gambar" />
 		</p>
 	</div>
+	<script type="text/javascript">
+		function viewSource(){;
+		    var source = "<html>";
+		    source += document.getElementsByTagName('html')[0].innerHTML;
+		    source += "</html>";
+		    source = source.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+		    source = "<pre>"+source+"</pre>";
+		    sourceWindow = window.open('','Source of page','height=600,width=800,scrollbars=1,resizable=1');
+		    sourceWindow.document.write(source);
+		    sourceWindow.document.close(); 
+		    if(window.focus) sourceWindow.focus();
+		}  
+	</script>
 </body>
 </html>
