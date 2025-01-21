@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan CSS Layout</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: "Times New Roman", serif;
+        }
+
+        /* Bagian judul */
+        .header {
+            background-color: #5F9EFF;
+            text-align: center;
+            height: 100px;
+        }
+
+        .header h1 {
+            margin: 0;
+            color: red;
+        }
+
+        .header h2 {
+            margin: 0;
+            color: #ff0;
+        }
+
+        /* Layout utama */
+        .main {
+            display: flex;
+            height: 500px;
+        }
+
+        .nav-left, .nav-right {
+            flex: 15%;
+            background-color: #ADD8E6;
+            padding: 10px;
+        }
+
+        .content {
+            flex: 65%;
+            background-color: #FDF5E6;
+            padding: 10px 50px;
+            font-size: 21px;
+        }
+
+        .content p {
+            background-color: #e0f0fe;
+            text-align: justify;
+            font-size: 20px;
+            color: black;
+        }
+
+        /* Bagian footer */
+        .footer {
+            background-color: #8FBC8F;
+            height: 40px;
+            text-align: center;
+            padding-top: 10px;
+            font-size: 18px;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Judul Website</h1>
+        <h2>Sub-judul</h2>
+    </div>
+
+    <div class="main">
+        <div class="nav-left">
+            Disini navigasi bagian kiri
+        </div>
+        <div class="content">
+            <p>Disini konten website. Ini adalah sebuah paragraf. Pada halaman ini, diatur warna background dengan kode: #e0f0fe. Untuk heading 1, diatur berwarna orange, rata tengah. Untuk selektor p, diatur font-family times new roman, ukuran huruf 20px. Judul Website warna merah. Sub judul warna #ff0. Tinggi judul 100 pixel dengan background warna #5F9EFF.</p>
+
+            <p>Navigasi kiri, tengah dan kanan, tinggi 500px, dengan lebar masing-masing: 15%, 65% dan 20%. Background kiri=ADD8E6, tengah = FDF5E6 dan kanan = ADD8E6. Tinggi bagian footer = 40px dengan background warna = 8FBC8F. Untuk bagian tengah, diberikan pengaturan indent 50px, ukuran font 21pt.</p>
+        </div>
+        <div class="nav-right">
+            Disini navigasi bagian kanan
+        </div>
+    </div>
+
+    <div class="footer">
+        Disini Footer website
+    </div>
+</body>
+</html>
+
